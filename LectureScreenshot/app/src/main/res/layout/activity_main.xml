@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LectureShot"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A1A"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video dekho — screen change hone pe auto screenshot"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Status Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Band hai"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video ka naam (PDF ka naam yahi hoga)"
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etVideoName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="jaise: physics_lecture_1"
+        android:inputType="text"
+        android:text="lecture"
+        android:padding="10dp"
+        android:background="#F5F5F5"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Sensitivity -->
+    <TextView
+        android:id="@+id/tvSensitivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensitivity: 15%"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kam = zyada screenshots | Zyada = sirf bada change"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="4dp"/>
+
+    <SeekBar
+        android:id="@+id/seekSensitivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="15"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="START — LectureShot Shuru Karo"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1976D2"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="STOP — Band Karo"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E53935"
+        android:enabled="false"/>
+
+    <!-- Info -->
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Notes + PDF Banao"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#388E3C"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Screenshots: Pictures/LectureShots mein save honge"
+        android:textSize="12sp"
+        android:textColor="#9E9E9E"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+</LinearLayout>
